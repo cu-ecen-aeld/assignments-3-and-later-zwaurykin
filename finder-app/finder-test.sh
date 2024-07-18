@@ -27,12 +27,6 @@ fi
 
 MATCHSTR="The number of files are ${NUMFILES} and the number of matching lines are ${NUMFILES}"
 
-echo "Cleaning all previous build artifacts"
-make clean
-
-echo "Compiling writer application using native compilation"
-make all
-
 echo "Writing ${NUMFILES} files containing string ${WRITESTR} to ${WRITEDIR}"
 
 rm -rf "${WRITEDIR}"
